@@ -19,38 +19,38 @@
       <div class="flex-row">
         <header>
           <nav class="flex-col">
-            <div class="nav-top">
+            <section class="nav-top">
               <img id="logo" src="./img/logo.svg" />
 
-              <section class="link-box">
+              <div class="link-box">
                 <div class="link">
-                  <a href="#">
+                  <a href="#" class="flex-row">
                     <img src="./img/home.svg" />
-                    <span>Home</span>
+                    <strong>Home</strong>
                   </a>
                 </div>
 
-                <div class="link">
-                  <a href="#">
+                <div class="link flex-row">
+                  <a href="#" class="flex-row">
                     <img src="./img/search.svg" />
                     <span>Cerca</span>
                   </a>
                 </div>
 
                 <div class="link">
-                  <a href="#">
+                  <a href="#" class="flex-row">
                     <img src="./img/libreria.svg" />
                     <span>La tua libreria</span>
                   </a>
                 </div>
-              </section>
+              </div>
 
-              <section class="playlist">
+              <div class="playlist">
                 <h4>PLAYLIST</h4>
                 <ul>
-                  <li>
+                  <li class="flex-row">
                     <i class="fa-sharp fa-solid fa-square-plus"></i>
-                    Crea Playlist
+                    <span>Crea Playlist</span>
                   </li>
                   <li>Name Playlist</li>
                   <li>Name Playlist</li>
@@ -60,15 +60,35 @@
                   <li>Name Playlist</li>
                   <li>Name Playlist</li>
                 </ul>
-              </section>
-            </div>
-            <div class="nav-bottom">
-              <img src="./img/download.svg" class="download" />
-            </div>
+              </div>
+            </section>
+
+            <section class="nav-bottom">
+              <div class="flex-row">
+                <img src="./img/download.svg" class="nav-bottom-img" />
+                <span>Installa app</span>
+              </div>
+
+              <hr />
+
+              <div class="flex-row">
+                <img
+                  src="./img/profile.svg"
+                  class="nav-bottom-img profile-img"
+                />
+                <strong>John Doe</strong>
+              </div>
+            </section>
           </nav>
         </header>
         <!-- NAV LINK/TITOLO/ FLEX CONTAINER -->
-        <main>main</main>
+        <main>
+          <div class="main-top">
+            <a href="#" class="flex-row">
+              <button>EFFETTUA L'UPGRADE</button>
+            </a>
+          </div>
+        </main>
       </div>
       <!-- TOOLBAR -->
       <footer>footer</footer>

@@ -25,14 +25,26 @@ ul {
   list-style: none;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
 footer,
-main {
+main,
+.main-link,
+.main-bottom,
+.card-box,
+.card {
   border: 2px dashed blue;
 }
 /********************* HEADER **********************/
 header {
   background-color: black;
-  width: 15rem;
+  width: 18rem;
   height: 90vh;
 }
 
@@ -103,24 +115,74 @@ li i {
 
 /********************** MAIN ***********************/
 main {
-  width: calc(100% - 15rem);
+  width: calc(100% - 18rem);
+  height: 90vh;
+  overflow: auto;
 }
 
+/* MAIN TOP */
 .main-top {
-  background-color: #222;
+  background-color: #080b12;
+  padding-right: 1rem;
 }
 
 .main-top button {
   color: white;
-  background-color: #222;
+  background-color: #080b12;
   border: 1px solid white;
-  padding: 0.8rem 3rem;
-  margin: 1rem 0;
+  padding: 0.6rem 3rem;
+  margin: 1.2rem 0;
   border-radius: 2rem;
+  font-weight: bold;
+}
+
+.main-top a {
+  text-decoration: none;
 }
 
 .main-top a {
   justify-content: end;
+}
+
+/* MAIN LINK */
+.main-link {
+  gap: 1.5rem;
+  justify-content: center;
+  background-color: #141922;
+}
+
+.main-link a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem 0;
+}
+
+/* MAIN BOTTOM */
+.main-bottom {
+  background-color: #141922;
+  padding: 1rem;
+}
+
+.card-box {
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+.card {
+  width: calc(100% / 6);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+}
+
+.circled-playlist img {
+  border-radius: 50%;
 }
 /********************* FOOTER **********************/
 footer {

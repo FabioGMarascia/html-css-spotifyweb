@@ -38,7 +38,9 @@ main,
 .main-link,
 .main-bottom,
 .card-box,
-.card {
+.card,
+.footer-side,
+.footer-center {
   border: 2px dashed blue;
 }
 /********************* HEADER **********************/
@@ -188,4 +190,18 @@ main {
 footer {
   width: 100%;
   height: 10vh;
+  background-color: #282828;
+  padding: 0.5rem;
+}
+
+.footer-side {
+  width: 25%;
+}
+
+.footer-side img {
+  height: 100%;
+}
+
+.footer-center {
+  width: 50%;
 }

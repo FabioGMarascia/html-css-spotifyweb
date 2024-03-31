@@ -27,21 +27,15 @@ ul {
 
 h2 {
   font-size: 2rem;
+  margin: 1.5rem 0;
 }
 
 h3 {
   font-size: 1.3rem;
 }
 
-footer,
-main,
-.main-link,
-.main-bottom,
-.card-box,
-.card,
-.footer-side,
-.footer-center {
-  border: 2px dashed blue;
+ {
+  border: 1px dashed blue;
 }
 /********************* HEADER **********************/
 header {
@@ -52,13 +46,13 @@ header {
 
 /* NAV-TOP */
 nav {
-  padding: 1rem;
   height: 100%;
   justify-content: space-between;
 }
 
 #logo {
   width: 9rem;
+  padding-left: 1rem;
 }
 
 .link-box {
@@ -78,10 +72,21 @@ nav {
   text-decoration: none;
   color: white;
   align-items: center;
+  padding-left: 1rem;
+}
+
+.home {
+  border-left: 3px solid #adff2f;
+  border-radius: 0.1rem;
+}
+
+.playlist h4 {
+  padding-left: 1rem;
 }
 
 .playlist li {
   margin: 1rem 0;
+  padding-left: 1rem;
 }
 
 ul .flex-row {
@@ -168,6 +173,7 @@ main {
 .card-box {
   padding: 1rem 0;
   gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 .card {
@@ -186,25 +192,28 @@ main {
 .circled-playlist img {
   border-radius: 50%;
 }
+
 /********************* FOOTER **********************/
 footer {
   width: 100%;
   height: 10vh;
   background-color: #282828;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
-.footer-side {
+.footer-left,
+.footer-right {
   width: 25%;
   align-items: center;
 }
 
-.footer-side img {
+.footer-left img {
   height: 4rem;
 }
 
-.footer-side i {
-  padding-left: 0.8em;
+.footer-left i,
+.footer-right i {
+  padding-left: 1rem;
 }
 
 .footer-side-txt {
@@ -213,4 +222,78 @@ footer {
 
 .footer-center {
   width: 50%;
+}
+
+.footer-center-top,
+.footer-center-bottom {
+  width: 100%;
+  height: 50%;
+}
+
+.footer-center-top {
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-center-top i {
+  font-size: 1.2rem;
+  padding: 0 1rem;
+}
+
+#play-icon {
+  font-size: 2rem;
+}
+
+.footer-center-bottom {
+  justify-content: center;
+  align-items: center;
+}
+
+.time-line {
+  width: 30rem;
+  height: 0.25rem;
+  background-color: rgba(211, 211, 211, 0.436);
+  margin: 0 1.5rem;
+  border-radius: 2rem;
+}
+
+.time-line-white {
+  background-color: white;
+  width: 6rem;
+  height: 100%;
+  border-radius: 2rem;
+}
+
+.time-line {
+  width: 30rem;
+  height: 0.25rem;
+  background-color: rgba(211, 211, 211, 0.436);
+  margin: 0 1.5rem;
+  border-radius: 5rem;
+}
+
+.time-line-white {
+  background-color: white;
+  width: 6rem;
+  height: 100%;
+  border-radius: 2rem;
+}
+
+.footer-right {
+  justify-content: flex-end;
+}
+
+.time-line-little {
+  width: 8rem;
+  height: 0.25rem;
+  background-color: rgba(211, 211, 211, 0.436);
+  border-radius: 2rem;
+  margin-left: 1rem;
+}
+
+.time-line-white-little {
+  background-color: white;
+  width: 1.5rem;
+  height: 100%;
+  border-radius: 2rem;
 }

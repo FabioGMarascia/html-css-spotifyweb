@@ -30,13 +30,6 @@ h2 {
   margin: 2rem 0 0.5rem 0;
 }
 
-h3 {
-  font-size: 1.3rem;
-}
-
- {
-  border: 1px dashed blue;
-}
 /********************* HEADER **********************/
 header {
   background-color: black;
@@ -103,6 +96,10 @@ li i {
 }
 
 /* NAV-BOTTOM */
+.nav-bottom {
+  padding: 1rem;
+}
+
 .nav-bottom-img {
   width: 1.5rem;
   margin-right: 0.5rem;
@@ -162,7 +159,7 @@ main {
 .main-link a {
   text-decoration: none;
   color: white;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
 }
 
 .border-bottom {
@@ -210,30 +207,27 @@ footer {
   width: 100%;
   height: 10vh;
   background-color: #282828;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .footer-left,
-.footer-right {
-  width: 25%;
+.footer-right,
+.footer-center {
+  width: calc(100% / 3);
   align-items: center;
 }
 
 .footer-left img {
-  height: 4rem;
+  height: 3rem;
 }
 
 .footer-left i,
 .footer-right i {
-  padding-left: 1rem;
+  padding-left: 0.8rem;
 }
 
 .footer-side-txt {
-  margin: 0 1.5rem 0 1rem;
-}
-
-.footer-center {
-  width: 50%;
+  margin: 0 1rem;
 }
 
 .footer-center-top,
@@ -248,17 +242,18 @@ footer {
 }
 
 .footer-center-top i {
-  font-size: 1.2rem;
-  padding: 0 1rem;
+  font-size: 1rem;
+  padding: 0 0.8rem;
 }
 
 #play-icon {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .footer-center-bottom {
   justify-content: center;
   align-items: center;
+  margin-top: 0.5rem;
 }
 
 .time-line {
@@ -271,22 +266,7 @@ footer {
 
 .time-line-white {
   background-color: white;
-  width: 6rem;
-  height: 100%;
-  border-radius: 2rem;
-}
-
-.time-line {
-  width: 30rem;
-  height: 0.25rem;
-  background-color: rgba(211, 211, 211, 0.436);
-  margin: 0 1.5rem;
-  border-radius: 5rem;
-}
-
-.time-line-white {
-  background-color: white;
-  width: 6rem;
+  width: 20%;
   height: 100%;
   border-radius: 2rem;
 }
@@ -296,7 +276,7 @@ footer {
 }
 
 .time-line-little {
-  width: 8rem;
+  width: 30%;
   height: 0.25rem;
   background-color: rgba(211, 211, 211, 0.436);
   border-radius: 2rem;
@@ -305,7 +285,33 @@ footer {
 
 .time-line-white-little {
   background-color: white;
-  width: 1.5rem;
+  width: 25%;
   height: 100%;
   border-radius: 2rem;
 }
+
+/********************* RESPONSIVE **********************/
+/* TABLET */
+@media all and (max-width: 1140px) {
+  /* MAIN BOTTOM */
+  .card-box {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: calc((100% / 4) - 0.8rem);
+  }
+
+  .main-link {
+    flex-wrap: wrap;
+  }
+}
+
+@media all and (max-width: 900px) {
+  /* MAIN BOTTOM */
+  .card {
+    width: calc((100% / 2) - 0.5rem);
+  }
+}
+
+/* MOBILE */

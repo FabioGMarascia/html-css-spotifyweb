@@ -4,6 +4,17 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+}
+body {
+  color: gray;
+}
+
+.white,
+h2,
+.card h3,
+.footer-center i,
+.footer-center span,
+.footer-right i {
   color: white;
 }
 
@@ -56,7 +67,6 @@ nav {
 
 .link:hover {
   border-left: 0.2rem solid #adff2f;
-  font-weight: bold;
 }
 
 .link img {
@@ -66,9 +76,13 @@ nav {
 
 .link a {
   text-decoration: none;
-  color: white;
+  color: gray;
   align-items: center;
   padding-left: 0.8rem;
+}
+
+.link a:hover {
+  color: white;
 }
 
 h4 {
@@ -82,6 +96,13 @@ h4 {
 .playlist li {
   margin: 1rem 0;
   padding-left: 1rem;
+}
+
+.playlist li:hover,
+.nav-bottom span:hover,
+.footer-left i:hover {
+  color: white;
+  cursor: pointer;
 }
 
 ul .flex {
@@ -100,6 +121,7 @@ li i {
 
 .nav-bottom-img {
   width: 1.5rem;
+  height: 1.5rem;
   margin-right: 0.5rem;
 }
 
@@ -113,7 +135,6 @@ li i {
 }
 
 .profile-img {
-  height: 1.5rem;
   background-color: gray;
   color: white;
   border-radius: 50%;
@@ -142,6 +163,10 @@ main {
   font-weight: bold;
 }
 
+.main-top button:hover {
+  scale: 1.1;
+}
+
 .main-top a {
   text-decoration: none;
   justify-content: end;
@@ -156,8 +181,12 @@ main {
 
 .main-link a {
   text-decoration: none;
-  color: white;
+  color: gray;
   padding-top: 1.5rem;
+}
+
+.main-link a:hover {
+  color: white;
 }
 
 .border-bottom {
@@ -192,6 +221,28 @@ main {
   width: 100%;
 }
 
+.card-img-box:hover img {
+  opacity: 0.5;
+}
+
+.card-img-box .fa-circle-play {
+  position: absolute;
+  font-size: 5rem;
+  color: white;
+  display: none;
+}
+
+.card-img-box:hover .fa-circle-play {
+  display: block;
+  cursor: pointer;
+}
+
+.card-img-box {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
 .card h3 {
   margin: 0.5rem 0;
 }
@@ -210,6 +261,10 @@ footer {
   bottom: 0;
 }
 
+footer i:hover {
+  cursor: pointer;
+}
+
 .footer-left,
 .footer-right,
 .footer-center {
@@ -224,6 +279,16 @@ footer {
 .footer-left i,
 .footer-right i {
   padding-left: 0.8rem;
+}
+
+.footer-left a {
+  color: gray;
+  text-decoration: none;
+}
+
+.footer-left a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 .footer-left-txt {
@@ -250,6 +315,10 @@ footer {
   font-size: 1.8rem;
 }
 
+#play-icon:hover {
+  scale: 1.1;
+}
+
 .footer-center-bottom {
   justify-content: center;
   align-items: center;
@@ -268,10 +337,17 @@ footer {
   width: 20%;
   height: 100%;
   border-radius: 2rem;
+  position: relative;
 }
 
 .footer-right {
   justify-content: flex-end;
+}
+
+.fa-circle {
+  position: absolute;
+  right: -5px;
+  top: -5px;
 }
 
 .time-line-little {
@@ -287,6 +363,23 @@ footer {
   width: 25%;
   height: 100%;
   border-radius: 2rem;
+  position: relative;
+}
+
+.time-line:hover .time-line-white,
+.time-line-little:hover .time-line-white-little {
+  background-color: #bef069;
+  cursor: pointer;
+}
+
+.time-line-white i,
+.time-line-white-little i {
+  display: none;
+}
+
+.time-line:hover i,
+.time-line-little:hover i {
+  display: block;
 }
 
 /********************* RESPONSIVE **********************/

@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
 body {
   color: gray;
 }
@@ -369,6 +370,10 @@ footer i:hover {
 .time-line:hover .time-line-white,
 .time-line-little:hover .time-line-white-little {
   background-color: #bef069;
+}
+
+.time-line:hover,
+.time-line-little:hover {
   cursor: pointer;
 }
 

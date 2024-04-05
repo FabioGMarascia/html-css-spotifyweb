@@ -267,14 +267,17 @@ footer i:hover {
 }
 
 .footer-left,
-.footer-right,
-.footer-center {
-  width: calc(100% / 3);
+.footer-right {
+  width: 30%;
   align-items: center;
 }
 
 .footer-left img {
   height: 3rem;
+}
+
+.footer-left-side {
+  align-items: center;
 }
 
 .footer-left i,
@@ -294,6 +297,11 @@ footer i:hover {
 
 .footer-left-txt {
   margin: 0 1rem;
+}
+
+.footer-center {
+  width: 40%;
+  align-items: center;
 }
 
 .footer-center-top,
@@ -352,7 +360,7 @@ footer i:hover {
 }
 
 .time-line-little {
-  width: 30%;
+  width: 6rem;
   height: 0.25rem;
   background-color: rgba(211, 211, 211, 0.436);
   border-radius: 2rem;
@@ -448,6 +456,31 @@ footer i:hover {
 
   .footer-left img {
     height: 2.5rem;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .footer-left-side {
+    flex-direction: column;
+  }
+
+  .footer-center-top i {
+    padding: 0 0.4rem;
+  }
+
+  .time-line {
+    margin: 0 0.5rem;
+  }
+
+  .time,
+  .footer-left-txt {
+    font-size: 0.8rem;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
   }
 }
 

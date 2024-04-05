@@ -464,6 +464,10 @@ footer i:hover {
     flex-direction: column;
   }
 
+  .footer-left i {
+    padding-left: 0.2rem;
+  }
+
   .footer-center-top i {
     padding: 0 0.4rem;
   }
